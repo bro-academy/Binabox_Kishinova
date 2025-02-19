@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Yanina Kishinova
 
-Mentor: 
+Mentor: Timur Akhmatkulov
