@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <a href="#"
-        ><img src="image/logo.svg" alt="Logo" width="36" height="40"
+    <header class="header">
+      <a href="#" class="header__logo-link"
+        ><img
+          class="header__logo"
+          src="image/logo.svg"
+          alt="Logo"
+          width="36"
+          height="40"
       /></a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">Contact Us</a></li>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="#">Home</a></li>
+          <li class="navigation__list-item"><a href="#">Blog</a></li>
+          <li class="navigation__list-item"><a href="#">Catalog</a></li>
+          <li class="navigation__list-item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <a href="#">Discord</a>
-      <button>Connect</button>
+      <a href="#" class="button button__link--secondary">Discord</a>
+      <button class="button button--primary">Connect</button>
     </header>
     <main>
       <section class="banner">
@@ -33,30 +38,34 @@
           We are the best way to check the rarity of NFT <span>collection</span>
         </p>
         <p class="banner__state">
-          <span class="bunner__state-number">2240+</span>
+          <span class="banner__state-number">2240+</span>
           <span class="banner__state-text">Total Iteam</span>
         </p>
-        <p><span>1000+</span>Profiles whitelisted</p>
-        <button class="button">Connect Wallet</button>
-        <a href="#" class="button">Whitelist now</a>
+        <p class="banner__state">
+          <span class="banner__state-number">1000+</span>
+          <span class="banner__state-text">Profiles whitelisted</span>
+        </p>
+        <button class="button button--primary">Connect Wallet</button>
+        <a href="#" class="button button--secondary">Whitelist now</a>
         <img src="cub.png" alt="cub" width="534" height="642" />
       </section>
-      <section>
+      <section class="catalog">
         <!-- section Catalog -->
-        <h2>Catalog</h2>
-        <a href="#">See all</a>
-        <button>&lt;</button>
-        <button>&gt;</button>
-        <article>
+        <h2 class="catalog__title">Catalog</h2>
+        <a href="#" class="button button--secondary">See all</a>
+        <button class="button button--secondary">&lt;</button>
+        <button class="button button--primary">&gt;</button>
+        <article class="catalog__item">
           <img
+            class="catalog__item-image"
             src="image/product1.img"
             alt="product1"
             width="253"
             height="324"
           />
-          <span>New</span>
-          <p>$199</p>
-          <h3>Name product</h3>
+          <span class="catalog__label--primary">New</span>
+          <p class="catalog__number">$199</p>
+          <h3 class="catalog__title-small">Name product</h3>
         </article>
         <article>
           <img src="image/cat.img" alt="cat" width="253" height="324" />
@@ -72,7 +81,7 @@
             width="253"
             height="324"
           />
-          <span>Sold out</span>
+          <span class="catalog__label--negative">Sold out</span>
           <p>$199</p>
           <h3>Name product</h3>
         </article>
@@ -92,7 +101,7 @@
 
       <section class="blog">
         <!-- section Our Blog -->
-        <h2>Our blog</h2>
+        <h2 class="blog__title">Our blog</h2>
         <article class="blog-card">
           <a href="#"
             ><img
@@ -119,117 +128,117 @@
           </p>
           <a class="blog-card__btn button" href="#">Read more</a>
         </article>
-        <article>
-          <a href="#"
+        <article class="blog-card">
+          <a href="#" class="blog-card__img-cut"
             ><img src="image/monkey.img" alt="monkey" width="736" height="198"
           /></a>
-          <span>NFT</span>
+          <span class="blog-card__label">NFT</span>
           <img
             src="image/humanlogo.svg"
             alt="humanlogo"
             width="16"
             height="16"
           />
-          <p>Tony Nguyen</p>
+          <p class="blog-card__name">Tony Nguyen</p>
           <img src="image/calendar.svg" alt="calendar" width="16" height="16" />
-          <p>20 Jun 2022</p>
-          <h3>Sonic live</h3>
-          <p>
+          <p class="blog-card__date">20 Jun 2022</p>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__desc">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="blog-card__btn button">Read more</a>
         </article>
-        <article>
-          <a href="#"
+        <article class="blog-card">
+          <a href="#" class="blog-card__img-cut"
             ><img src="image/goose.img" alt="goose" width="736" height="198"
           /></a>
-          <span>NFT</span>
+          <span class="blog-card__label">NFT</span>
           <img
             src="image/humanlogo.svg"
             alt="humanlogo"
             width="16"
             height="16"
           />
-          <p>Tony Nguyen</p>
+          <p class="blog-card__name">Tony Nguyen</p>
           <img src="image/calendar.svg" alt="calendar" width="16" height="16" />
-          <p>20 Jun 2022</p>
-          <h3>Sonic live</h3>
-          <p>
+          <p class="blog-card__date">20 Jun 2022</p>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__desc">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="blog-card__btn button">Read more</a>
         </article>
-        <article>
-          <a href="#"
+        <article class="blog-card">
+          <a href="#" class="blog-card__img-cut"
             ><img src="image/bones.img" alt="bones" width="736" height="198"
           /></a>
-          <span>NFT</span>
+          <span class="blog-card__label">NFT</span>
           <img
             src="image/humanlogo.svg"
             alt="humanlogo"
             width="16"
             height="16"
           />
-          <p>Tony Nguyen</p>
+          <p class="blog-card__name">Tony Nguyen</p>
           <img src="image/calendar.svg" alt="calendar" width="16" height="16" />
-          <p>20 Jun 2022</p>
-          <h3>Sonic live</h3>
-          <p>
+          <p class="blog-card__date">20 Jun 2022</p>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__desc">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="blog-card__btn button">Read more</a>
         </article>
-        <article>
-          <a href="#"
+        <article class="blog-card">
+          <a href="#" class="blog-card__img-cut"
             ><img src="image/cat2.img" alt="cat2" width="736" height="198"
           /></a>
-          <span>NFT</span>
+          <span class="blog-card__label">NFT</span>
           <img
             src="image/humanlogo.svg"
             alt="humanlogo"
             width="16"
             height="16"
           />
-          <p>Tony Nguyen</p>
+          <p class="blog-card__name">Tony Nguyen</p>
           <img src="image/calendar.svg" alt="calendar" width="16" height="16" />
-          <p>20 Jun 2022</p>
-          <h3>Sonic live</h3>
-          <p>
+          <p class="blog-card__date">20 Jun 2022</p>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__desc">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="blog-card__btn button">Read more</a>
         </article>
-        <article>
-          <a href="#"
+        <article class="blog-card">
+          <a href="#" class="blog-card__img"
             ><img src="image/game.img" alt="game" width="736" height="664"
           /></a>
-          <span>NFT</span>
+          <span class="blog-card__label">NFT</span>
           <img
             src="image/humanlogo.svg"
             alt="humanlogo"
             width="16"
             height="16"
           />
-          <p>Tony Nguyen</p>
+          <p class="blog-card__name">Tony Nguyen</p>
           <img src="image/calendar.svg" alt="calendar" width="16" height="16" />
-          <p>20 Jun 2022</p>
-          <h3>Sonic live</h3>
-          <p>
+          <p class="blog-card__date">20 Jun 2022</p>
+          <h3 class="blog-card__title">Sonic live</h3>
+          <p class="blog-card__desc">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
           </p>
-          <a href="#">Read more</a>
+          <a href="#" class="blog-card__btn button">Read more</a>
         </article>
-        <a href="#">Read more</a>
+        <a href="#" class="blog-card__btn button">Read more</a>
       </section>
-      <section>
+      <section class="about-us">
         <!-- About Us -->
-        <h2>About Us</h2>
-        <p>
+        <h2 class="about-us__title">About Us</h2>
+        <p class="about-us__text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
           non proident, sunt in culpa qui officia dese runt mollit anim id est
@@ -245,39 +254,39 @@
             </p>
           </li>
           <li>
-            <h3>Big collection</h3>
-            <p>
+            <h3 class="info-card__title">Big collection</h3>
+            <p class="info-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
           <li>
-            <h3>Top Resourse</h3>
-            <p>
+            <h3 class="info-card__title">Top Resourse</h3>
+            <p class="info-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
           <li>
-            <h3>Big community</h3>
-            <p>
+            <h3 class="info-card__title">Big community</h3>
+            <p class="info-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
         </ol>
-        <a href="#">Read more</a>
+        <a href="#" class="blog-card__btn button">Read more</a>
       </section>
-      <section>
+      <section class="our-team">
         <!-- Our Team -->
-        <h2>Our Team</h2>
-        <div>
-          <div>
+        <h2 class="our-team__title">Our Team</h2>
+        <div class="employee-list">
+          <div class="employee-list__card">
             <img src="image/man.img" alt="man" width="120" height="120" />
-            <h3>Jason Smith</h3>
-            <p>Co - Founder</p>
-            <ul>
-              <li>
+            <h3 class="employee-list__name">Jason Smith</h3>
+            <p class="employee-list__text">Co - Founder</p>
+            <ul class="employee-list__link">
+              <li class="employee-list__link-item">
                 <a href="#"
                   ><img
                     src="image/twitter.svg"
@@ -638,13 +647,13 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="questios">
         <!-- FAQs -->
-        <h2>FAQs</h2>
-        <div>
+        <h2 class="questios__title">FAQs</h2>
+        <div class="questios-list">
           <details>
-            <summary>What are the NFTs?</summary>
-            <p>
+            <summary class="questios-list__point">What are the NFTs?</summary>
+            <p class="questios-list__text">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum
               lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
             </p>
@@ -664,47 +673,59 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
           <a href="#"
             ><img src="image/logo.svg" alt="Logo" width="36" height="40"
           /></a>
           <a href="#"
             ><img src="image/logoB.svg" alt="Binabox" width="133" height="21"
           /></a>
-          <p>We are the best way to check the rarity of NFT collection.</p>
+          <p class="footer-desc__text">
+            We are the best way to check the rarity of NFT collection.
+          </p>
         </div>
-        <div>
-          <div>
+        <div class="footer-right">
+          <div class="footer-nav">
             <a href="#">Subscribe</a>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item"><a href="#">Home</a></li>
+                <li class="navigation__list-item"><a href="#">Blog</a></li>
+                <li class="navigation__list-item"><a href="#">Catalog</a></li>
+                <li class="navigation__list-item">
+                  <a href="#">Contact Us</a>
+                </li>
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="footer-nav">
             <a href="#">Company</a>
-            <nav>
-              <ul>
-                <li><a href="#">Terms Canditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Whitepaper</a></li>
-                <li><a href="#">Help Center</a></li>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a href="#">Terms Canditions</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a href="#">Whitepaper</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a href="#">Help Center</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-      <div>
-        <p>BINABOX 2022 - ALL rights reserved</p>
+      <div class="footer-bottom">
+        <p class="footer-desc__text">BINABOX 2022 - ALL rights reserved</p>
 
-        <ul>
-          <li>
+        <ul class="employee-list__link">
+          <li class="employee-list__link-item">
             <a href="#"
               ><img
                 src="image/twitter.svg"
@@ -713,7 +734,7 @@
                 height="40"
             /></a>
           </li>
-          <li>
+          <li class="employee-list__link-item">
             <a href="#"
               ><img
                 src="image/facebook.svg"
@@ -722,7 +743,7 @@
                 height="40"
             /></a>
           </li>
-          <li>
+          <li class="employee-list__link-item">
             <a href="#"
               ><img
                 src="image/telegram.svg"
@@ -731,7 +752,7 @@
                 height="40"
             /></a>
           </li>
-          <li>
+          <li class="employee-list__link-item">
             <a href="#"
               ><img
                 src="image/youtoobe.svg"
@@ -740,12 +761,12 @@
                 height="40"
             /></a>
           </li>
-          <li>
+          <li class="employee-list__link-item">
             <a href="#"
               ><img src="image/tiltok.svg" alt="TikTok" width="40" height="40"
             /></a>
           </li>
-          <li>
+          <li class="employee-list__link-item">
             <a href="#"
               ><img
                 src="image/discord.svg"
