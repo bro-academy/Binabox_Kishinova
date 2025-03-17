@@ -24,18 +24,20 @@
       <button>Connect</button>
     </header>
     <main>
-      <section>
+      <section class="ourblog">
         <h1>Our blog</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our blog</a></li>
-          <li><a href="#">The Basilisks NFT</a></li>
+        <ul class="ourblog__infocard">
+          <li><a href="#" class="ourblog__link">Home</a></li>
+          <li><a href="#" class="ourblog__link">Our blog</a></li>
+          <li>
+            <a href="#" class="ourblog__link--disabled">The Basilisks NFT</a>
+          </li>
         </ul>
       </section>
-      <aside>
+      <aside class="aside">
         <div>
           <div>
-            <h2>Categories</h2>
+            <h2 class="aside__title">Categories</h2>
             <ul>
               <li><a href="#">Our blog (12)</a></li>
               <li><a href="#">Metaverse (24)</a></li>
@@ -47,9 +49,9 @@
             </ul>
           </div>
           <div>
-            <h2>Tag</h2>
+            <h2 class="aside__title">Tag</h2>
             <ul>
-              <li><button>NFT</button></li>
+              <li><button class="button aside__button">NFT</button></li>
               <li><button>ICO</button></li>
               <li><button>Robot</button></li>
               <li><button>Crypto</button></li>
@@ -61,34 +63,37 @@
       </aside>
       <article>
         <div>
-          <figure>
+          <figure class="figure">
             <img
+              class="figure__img"
               src="image/dragon.img"
               alt="dragon"
               width="1024"
               height="557"
             />
-            <figcaption>Photo caption</figcaption>
+            <figcaption class="figure__text">Photo caption</figcaption>
           </figure>
-          <h2>The Basilisks NFT</h2>
-          <p>Gaming</p>
+          <h2 class="ourblog__title">The Basilisks NFT</h2>
+          <p class="ourblog__text">Gaming</p>
           <div>
             <img
+              class="ourblog__img"
               src="image/humanlogo.svg"
               alt="humanlogo"
               width="16"
               height="16"
             />
-            <p>Tony Nguyen</p>
+            <p class="ourblog__name">Tony Nguyen</p>
             <img
+              class="ourblog__img"
               src="image/calendar.svg"
               alt="calendar"
               width="16"
               height="16"
             />
-            <p>20 Jun 2022</p>
+            <p class="ourblog__date">20 Jun 2022</p>
           </div>
-          <p>
+          <p class="ourblog__text">
             The Basilisks that players collect are represented with NFTs on
             Ethereum’s blockchain with real-world value. Players use the
             <span>Basilisks they have </span>gathered to battle other players to
@@ -98,7 +103,7 @@
             game developed on the Ethereum blockchain by a decentralized
             autonomous organization (DAO) called the Balthazar DAO.
           </p>
-          <ul>
+          <ul class="ourblog__ul">
             <li>
               The Basilisks that players collect are represented with NFTs on
               Ethereum’s blockchain with real-world value. Players use the
@@ -115,7 +120,7 @@
             </li>
           </ul>
         </div>
-        <ul>
+        <ul class="ourblog__list">
           <li>
             <img src="image/icon.svg" alt="icon" width="24" height="24" />List
             name 1
@@ -134,27 +139,41 @@
           </li>
         </ul>
         <div>
-          <blockquote>
+          <blockquote class="ourblog__bq">
             The first huge metaverse arena to arrange live sports, hang out and
             even make bets and wagers
 
             <div>
-              <img src="image/star.svg" alt="star" />
-              <p>8.5/10</p>
-              <cite>Markout Corporation</cite>
+              <img class="ourblog__img" src="image/star.svg" alt="star" />
+              <p class="ourblog__name">8.5/10</p>
+              <cite class="ourblog__name">Markout Corporation</cite>
             </div>
           </blockquote>
         </div>
-        <figure>
-          <img src="image/dragon2.img" alt="dragon2" width="500" height="394" />
-          <figcaption>Photo caption</figcaption>
+        <figure class="figure">
+          <img
+            class="figure__img"
+            src="image/dragon2.img"
+            alt="dragon2"
+            width="500"
+            height="394"
+          />
+          <figcaption class="figure__text">Photo caption</figcaption>
         </figure>
-        <figure>
-          <img src="image/dragon3.img" alt="dragon3" width="500" height="394" />
-          <figcaption>Photo caption</figcaption>
+        <figure class="figure">
+          <img
+            class="figure__img"
+            src="image/dragon3.img"
+            alt="dragon3"
+            width="500"
+            height="394"
+          />
+          <figcaption class="figure__text">Photo caption</figcaption>
         </figure>
-        <h3>NFTs are digital assets that represent real-world objects</h3>
-        <p>
+        <h3 class="ourblog__title">
+          NFTs are digital assets that represent real-world objects
+        </h3>
+        <p class="ourblog__title-text">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -162,7 +181,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-        <p>
+        <p class="ourblog__title-text">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -171,8 +190,8 @@
           ecosystem.
         </p>
 
-        <h3>NFT Avatar Generators</h3>
-        <p>
+        <h3 class="ourblog__title">NFT Avatar Generators</h3>
+        <p class="ourblog__title-text">
           You can find a range of NFT marketplaces where you can buy existing
           NFTs or list your own NFTs for sale
         </p>
@@ -180,15 +199,15 @@
         <div>
           <div>
             <span>Tags:</span>
-            <ul>
-              <li><button>NFT</button></li>
-              <li><button>ICO</button></li>
-              <li><button>Crypto</button></li>
+            <ul class="button-list">
+              <li><button class="button">NFT</button></li>
+              <li><button class="button">ICO</button></li>
+              <li><button class="button">Crypto</button></li>
             </ul>
           </div>
           <div>
             <span>Share:</span>
-            <ul>
+            <ul class="button-list-second">
               <li>
                 <a href="#"
                   ><img
